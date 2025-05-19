@@ -1,380 +1,155 @@
-html {
-  scroll-behavior: smooth;
-}
+!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI-helper MAG</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Podkova:wght@400..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/the-new-css-reset@1.11.3/css/reset.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body class="page">
+    <header class="header">
+      <div class="header-container">
+        <a class="header-logo" href="./index.html">
+          <img
+            class="header-icon"
+            src="./images/header-icon.png"
+            alt="IA-helper MAG logo"
+          />
+          Маг
+        </a>
+      </div>
+    </header>
 
-.page {
-  font-family: 'Montserrat', sans-serif;
-  background: #e8edf1;
-}
+    <section class="hero">
+      <div class="hero-container">
+        <h1 class="hero-title">
+          Привіт! <br />
+          Я AI-робот на ім’я Маг
+        </h1>
 
-/*header section*/
-.header {
-  padding: 32px 0px;
-  margin: 0 auto;
-  max-width: 1440px;
-}
+        <div class="hero-wrapper">
+          <p class="hero-text">
+            Розумію тренди, підбираю кольори, створюю композиції та генерую
+            ідеї.
+          </p>
+          <p class="hero-text">
+            Працюю 24/7, аналізую найкращі роботи у світі, розбираю їх на атоми
+            й пропоную рішення, які захоплюють з першого погляду.
+          </p>
 
-.header-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 0px 16px;
-  min-width: 360px;
-  max-width: 1032px;
-  margin: 0 auto;
-}
+          <a class="hero-link" href="#cta">Знайти Магу роботу</a>
+          <img class="hero-icon" src="./images/hero-icon.png" alt="icon star" />
+        </div>
+      </div>
+    </section>
 
-.header-logo {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 14px;
+    <section class="features">
+      <div class="features-container">
+        <div class="features-wrappers">
+          <img
+            class="features-img"
+            src="./images/features-icon-1.png"
+            alt="Іконка розділу переваг"
+            width="44"
+            height="44"
+          />
+          <h2 class="features-title">
+            Я багато що вмію, але ось мої три головні особливості
+          </h2>
+          <img
+            class="features-img"
+            src="./images/features-icon-2.png"
+            alt="Іконка розділу переваг"
+            width="44"
+            height="44"
+          />
+        </div>
+        <ul class="features-list">
+          <li class="features-item">
+            <img
+              class="features-item-img"
+              src="./images/features-1.jpg"
+              alt="Зображення переваги 1"
+              width="312"
+              height="234"
+            />
+            <div class="features-item-wrapper">
+              <h3 class="features-subtitle">Знаю майже все</h3>
+              <p class="features-desc">
+                Знаю всі тренди й генерую дизайн миттєво, але саме твоя
+                креативність робить його унікальним.
+              </p>
+            </div>
+          </li>
+          <li class="features-item">
+            <img
+              class="features-item-img"
+              src="./images/features-2.jpg"
+              alt="Зображення переваги 2"
+              width="312"
+              height="234"
+            />
+            <div class="features-item-wrapper">
+              <h4 class="features-subtitle">Ніколи не втомлююся</h4>
+              <p class="features-desc">
+                Працюю без перерви, не боюся дедлайнів і не вигоряю.
+              </p>
+            </div>
+          </li>
+          <li class="features-item">
+            <img
+              class="features-item-img"
+              src="./images/features-3.jpg"
+              alt="Зображення переваги 3"
+              width="312"
+              height="234"
+            />
+            <div class="features-item-wrapper">
+              <h5 class="features-subtitle">Без тебе я просто код</h5>
+              <p class="features-desc">
+                Мені потрібен твій напрямок, бачення та фінальне слово.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
 
-  font-family: 'Podkova';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 48px;
-  line-height: 52px;
-  letter-spacing: -0.02em;
-  color: #807ef2;
-}
+    <section class="cta" id="cta">
+      <div class="cta-container">
+        <h2 hidden>Заклик до дії</h2>
+        <div class="cta-wrapper">
+          <h3 class="cta-subtitle">
+            Поділися, будь ласка, поштою та знайди Магу роботу
+          </h3>
 
-.header-icon {
-  width: 44px;
-  height: 44px;
-}
+          <form class="cta-form">
+            <input class="cta-form-field" type="text" placeholder="Імʼя" />
+            <input
+              class="cta-form-field"
+              type="email"
+              name="email"
+              placeholder="Пошта"
+            />
+            <button class="cta-form-button" type="submit">Надіслати</button>
+        </div>
+      </div>
+    </section>
 
-/* Hero section */
-.hero {
-  padding: 100px 0px;
-  margin: 0 auto;
-  max-width: 1440px;
-  background: url(../images/hero.png);
-}
-
-.hero-container {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 0px 16px;
-  gap: 32px;
-  margin: 0 auto;
-
-  min-width: 360px;
-  max-width: 1032px;
-}
-
-.hero-title {
-  max-width: 484px;
-
-  font-family: 'Podkova';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 64px;
-  line-height: 68px;
-  letter-spacing: -0.02em;
-  color: #1b2939;
-}
-
-.hero-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 0px;
-  gap: 24px;
-
-  max-width: 484px;
-}
-
-.hero-text {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 30px;
-  color: #1b2939;
-}
-
-.hero-link {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 24px 32px;
-  min-width: 263px;
-  max-width: 348px;
-
-  background: linear-gradient(
-    80.23deg,
-    #e8652d -4.25%,
-    #e82dd2 28.23%,
-    #a650ff 69.35%,
-    #009dff 116.49%
-  );
-  border-radius: 16px;
-
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 24px;
-
-  text-align: center;
-  color: #ffffff;
-
-  transition: 200ms ease-in;
-}
-
-.hero-link:hover {
-  background: linear-gradient(
-    88.08deg,
-    #009dff 3.71%,
-    #a650ff 38.56%,
-    #e84980 68.28%,
-    #e8652d 91.86%
-  );
-  box-shadow: 0px 6px 12px rgba(172, 73, 245, 0.3);
-}
-
-.hero-icon {
-  position: absolute;
-  width: 44px;
-  height: 44px;
-  right: 0px;
-  bottom: 0px;
-}
-
-/* Features section */
-.features {
-  padding: 100px 0px;
-  margin: 0 auto;
-  min-width: 360px;
-  max-width: 1440px;
-}
-.features-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0px 16px;
-  gap: 64px;
-  min-width: 360px;
-  max-width: 1032px;
-  margin: 0 auto;
-}
-.features-wrappers {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 0px;
-  gap: 8px;
-  min-width: 328px;
-  max-width: 746px;
-}
-.features-img {
-}
-.features-title {
-  font-family: 'Podkova';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 48px;
-  line-height: 52px;
-  text-align: center;
-  letter-spacing: -0.02em;
-  color: #1b2939;
-}
-.features-list {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: flex-start;
-  align-content: center;
-  padding: 0px;
-  gap: 32px;
-}
-.features-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 312px;
-  min-height: 460px;
-
-  background: rgba(255, 255, 255, 0.8);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2), 0px 1px 2px rgba(0, 0, 0, 0.06);
-  border-radius: 24px;
-  overflow: hidden;
-
-  transition: 300ms ease-out;
-}
-.features-item:hover {
-  box-shadow: 0px 20px 25px -5px rgba(0, 0, 0, 0.2),
-    0px 10px 10px -5px rgba(0, 0, 0, 0.04);
-}
-.features-item-img {
-}
-.features-item-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 36px 24px;
-  gap: 16px;
-}
-.features-subtitle {
-  font-family: 'Podkova';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 26px;
-  color: #1b2939;
-}
-.features-desc {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 28px;
-  color: #1b2939;
-}
-
-/* Call to action */
-.cta {
-  padding: 100px 0px;
-  margin: 0 auto;
-  max-width: 1440px;
-  background: url(../images/cta.png);
-}
-.cta-container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  padding: 0px 16px;
-  margin: 0 auto;
-  gap: 48px;
-  min-width: 360px;
-  max-width: 1032px;
-}
-.cta-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 48px 32px;
-  gap: 16px;
-
-  min-width: 328px;
-  max-width: 494px;
-  background: rgba(255, 255, 255, 0.8);
-  border-radius: 24px;
-}
-.cta-subtitle {
-  max-width: 420px;
-  font-family: 'Podkova';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 28px;
-  line-height: 36px;
-  letter-spacing: -0.02em;
-  color: #1b2939;
-}
-.cta-form {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 0px;
-  gap: 24px;
-  width: 100%;
-  min-width: 264px;
-  max-width: 420px;
-}
-.cta-form-field {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 24px 12px;
-  gap: 10px;
-  width: 100%;
-  min-width: 264px;
-  max-width: 420px;
-  background: rgba(14, 42, 64, 0.06);
-  border-radius: 12px;
-  transition: 200ms ease-in;
-}
-.cta-form-field::placeholder {
-  font-family: 'Montserrat';
-  font-style: italic;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  color: rgba(27, 41, 57, 0.64);
-}
-.cta-form-field:focus {
-  box-shadow: 0px 0px 1px 4px #807ef2;
-}
-.cta-form-button {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 24px 32px;
-  width: 100%;
-  min-width: 263px;
-  max-width: 420px;
-  background: linear-gradient(
-    80.23deg,
-    #e8652d -4.25%,
-    #e82dd2 28.23%,
-    #a650ff 69.35%,
-    #009dff 116.49%
-  );
-  border-radius: 16px;
-
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 24px;
-
-  text-align: center;
-  color: #ffffff;
-
-  transition: 200ms ease-in;
-}
-.cta-form-button:hover {
-  background: linear-gradient(
-    88.08deg,
-    #009dff 3.71%,
-    #a650ff 38.56%,
-    #e84980 68.28%,
-    #e8652d 91.86%
-  );
-  box-shadow: 0px 6px 12px rgba(172, 73, 245, 0.3);
-}
-
-/* Footer section */
-.page-footer {
-  padding: 32px 0px;
-  margin: 0 auto;
-  max-width: 1440px;
-}
-.footer-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 0px 16px;
-  margin: 0 auto;
-  min-width: 360px;
-  max-width: 1032px;
-}
-.footer-copyrigths {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 28px;
-  text-align: center;
-  color: #1b2939;
-}
+    <footer class="page-footer">
+      <div class="footer-container">
+        <p class="footer-copyrigths">&copy; 2025 Mag</p></div>
+    </footer>
+  </body>
+</html>
